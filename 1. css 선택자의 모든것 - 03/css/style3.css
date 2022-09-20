@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box; 
+    outline: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* 
+:checked 가상클래스
+input type radio, checkbox 클릭이벤트를 주고자할 때 사용
+*/
+
+input[type=radio]:checked + span {
+    font-weight: bold;
+}

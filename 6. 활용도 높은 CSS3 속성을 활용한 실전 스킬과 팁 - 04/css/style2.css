@@ -1,0 +1,43 @@
+/* Goggle Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap');
+
+/* font awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+/* XEIcon */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+* {
+    /* box-sizing: border-box;  */
+    outline: none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* Variables */
+:root {
+    /* Font size & color */
+    --font-base : 15px;
+    --large-headline : 46px;
+    --medium-headline : 36px;
+    --small-headline : 26px;
+    --color-base : #333;
+    --large-headline-color : crimson;
+}
+
+body {
+    font-size: var(--font-base);
+    color: var(--color-base);
+}
+
+.frame h1 {
+    font-size: var(--large-headline);
+    color: var(--large-headline-color);
+}
+
+.frame h2 {
+    font-size: var(--medium-headline);
+}
+
+.frame h3 {
+    font-size: var(--small-headline);
+}

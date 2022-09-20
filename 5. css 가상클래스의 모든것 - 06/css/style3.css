@@ -1,0 +1,20 @@
+/* Goggle Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box; 
+    outline: none;
+}
+
+.football {
+    list-style: none;
+    padding: 0;
+}
+.football li::before{
+    content: '\26BD';
+    margin-right: 5px;
+    font-size:0.8em;
+    display: inline-block;
+    transform: translateY(-1px);
+}

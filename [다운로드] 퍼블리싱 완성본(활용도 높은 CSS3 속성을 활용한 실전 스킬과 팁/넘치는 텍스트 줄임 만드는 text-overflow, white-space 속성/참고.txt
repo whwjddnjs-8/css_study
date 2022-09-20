@@ -1,0 +1,11 @@
+■ text-overflow 속성
+
+text-overflow : clip; 넘치는 텍스트 자름(기본값)
+text-overflow : ellipsis; 말 줄임표로 넘치는 텍스트가 있다고 표시(...)
+
+ellipsis 1.생략 2.생략부호
+
+■ white-space 속성
+
+white-space: normal; 너비에 넘칠 경우 줄 바꿈(기본값)
+white-space: nowrap; 너비에 넘칠 경우 줄 안바꿈

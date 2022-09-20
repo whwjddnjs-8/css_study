@@ -1,0 +1,61 @@
+/* Goggle Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap');
+
+/* font awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+/* XEIcon */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+* {
+    /* box-sizing: border-box;  */
+    outline: none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    margin: 35px;
+}
+
+/* Variables */
+
+:root {
+    /* --변수이름 : 값; */
+    --primary : #3498db;
+    --confirm : #2ecc71;
+    --warning : #f39c12;
+    --critical-warning : #e74c3c;
+}
+
+.buttons .btn {
+    width: 150px;
+    padding: 8px;
+    border-radius: 3px;
+    border: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    color : #fff
+}
+
+.buttons .primary {
+    background-color: var(--primary);
+}
+
+.buttons .confirm {
+    background-color: var(--confirm);
+}
+
+.buttons .warning {
+    background-color: var(--warning);
+}
+
+.buttons .critical-warning {
+    background-color: var(--critical-warning);
+}
+
+.frame {
+    border: 1px solid #000;
+    width: 300px;
+    height: 300px;
+    background-color: var(--warning);
+}

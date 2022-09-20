@@ -1,0 +1,170 @@
+/* Goggle Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap');
+
+/* font awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+/* XEIcon */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+* {
+    /* box-sizing: border-box;  */
+    outline: none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    margin: 100px;
+    background-color: #fff;
+    font-size: 15px;
+}
+
+.login {
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.login b {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.login .field {
+    margin: 10px 0;
+} 
+.login .field input[type=text],
+.login .field input[type=email],
+.login .field input[type=password],
+.login .field select,
+.login .field textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    transition: 0.35s;
+}
+
+.login .field textarea {
+    height: 100px;
+}
+
+.login button {
+    width: 100%;
+    border: none;
+    padding: 7px;
+    background-color: limegreen;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.login button:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.login .user-check {
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Form Element Hover Effect */
+/* .login .field input[type=text]:hover,
+.login .field input[type=email]:hover,
+.login .field input[type=password]:hover {
+    border: 1px solid limegreen;
+} */
+
+/* Form Element Icon Image */
+
+.login .field input[type=text],
+.login .field input[type=email],
+.login .field input[type=password] {
+    padding-left: 30px;
+    background-repeat: no-repeat;
+    background-position: center left 5px;
+}
+.login .field input[type=text] {
+    background-image: url(../images/user.png);
+    background-size: 20px;
+}
+
+.login .field input[type=email] {
+    background-image: url(../images/mail.png);
+    background-size: 20px;
+}
+
+.login .field input[type=password] {
+    background-image: url(../images/padlock.png);
+    background-size: 20px;
+}
+
+/* Form Placeholder CSS */
+.login .field input[type=text]::placeholder,
+.login .field input[type=email]::placeholder,
+.login .field input[type=password]::placeholder {
+    color: #bbb;
+    transition: 0.2s;
+}
+
+/* Form Focus CSS */
+.login .field input[type=text]:focus,
+.login .field input[type=email]:focus,
+.login .field input[type=password]:focus,
+.login .field textarea:focus,
+.login .field select:focus {
+    border: 1px solid limegreen;
+}
+
+/* Form Placeholder & Focus CSS */
+.login .field input[type=text]:focus::placeholder,
+.login .field input[type=email]:focus::placeholder,
+.login .field input[type=password]:focus::placeholder,
+.login .field textarea:focus::placeholder {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Custom Checkbox & Radio */
+.login .field input[name=event] {
+    display: none;
+}
+.login .field input[name=event] + em {
+    /* border: 1px solid #000; */
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    background: url(../images/checkbox-02.png) no-repeat;
+    /* background-position: left; */
+    transform: translateY(3px);
+}
+
+.login .field input[name=event]:checked + em {
+    background-position: right;
+}
+
+.login .field input[name=agree]{
+    display: none;
+}
+
+.login .field input[name=agree] + em {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    background: url(../images/radio-01.png) no-repeat;
+    /* background-position: left; */
+    transform: translateY(3px);
+}
+
+.login .field input[name=agree]:checked + em {
+    background-position: right;
+}
+
+.login .field input[name=agree]:checked + em + span {
+    color: crimson;
+}

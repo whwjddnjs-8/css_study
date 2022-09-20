@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box; 
+    outline: none;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 태그.클래스네임 {...} */
+
+.container {
+    width: 1200px;
+}
+header {
+    height: 100px;
+}
+
+/* Section : About */
+.about {
+    background-color: blue;
+}
+
+section.about {
+    background-color: blue;
+}
+

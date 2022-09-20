@@ -1,0 +1,15 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box; 
+    outline: none;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}

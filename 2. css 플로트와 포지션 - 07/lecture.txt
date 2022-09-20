@@ -1,0 +1,3 @@
+포지션 속성 우선순위
+1. z-index가 같다는 기준으로 relative가 absolute보다 우선
+2. z-index가 같다는 기준으로 2개의 absolute가 있으면 html 출현 순서가 나중에 나온것이 우선순위

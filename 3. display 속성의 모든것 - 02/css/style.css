@@ -1,0 +1,38 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box; 
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+ul li {
+    border: 1px solid #000;
+    float: left; /* float : left하는 순간 inline-block으로 바뀜, 부모 요소의 높이값이 없어짐*/
+    /* 마진이 없는 inline-block이 됨 */
+    width: 150px;
+    text-align: center;
+    padding: 5px;
+}
+
+div a { /* a는 inline 태그 */
+    border: 1px solid #000;
+    width: 150px;
+    /* 1번 방법 float */
+    float: left;
+    /* 2번 방법 display */
+    /* 마진이 있는 inline-block */
+    /* display: inline-block; */
+    /* margin-right: -5px; */
+    text-align: center;
+    padding: 5px;
+
+}

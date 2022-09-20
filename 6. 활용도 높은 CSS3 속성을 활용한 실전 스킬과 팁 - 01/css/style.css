@@ -1,0 +1,90 @@
+/* Goggle Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap');
+
+/* font awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+/* XEIcon */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+* {
+    /* box-sizing: border-box;  */
+    outline: none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    margin: 35px;
+    height: 100vh;
+
+    /* Flex */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+    /* grid */
+    /* display: grid;
+    justify-content: center;
+    align-items: center; */
+
+    /* place-item */
+    /* display: grid;
+    place-items: center; */
+}
+
+.element {
+    border: 5px solid #000;
+    background-color: skyblue;
+    color: white;
+    width: 300px;
+    height: 300px;
+
+    /* Position */
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+
+    /* margin: auto */
+    /* margin: auto; */
+
+    
+}
+
+.element2 {
+    border: 5px solid #000;
+    background-color: skyblue;
+    color: white;
+    height: 200px;
+    /* text-align: center; */
+}
+
+.element2 span {
+    border: 5px solid red;
+    display: block;
+    text-align: center;
+    float: right;
+}
+
+.element3 {
+    border: 5px solid #000;
+    background-color: skyblue;
+    color: white;
+    width: 500px;
+    height: 200px;
+    /* 마크업이 안된 텍스트들을 중앙으로 보내기 위해서는 부모요소를 display flex or grid 해줘야함 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div img {
+    vertical-align: middle;
+    /* transform: translateY(3px); */
+    padding-right: 2px;
+}
+
+div span {
+    font-size: 13px;
+    
+}

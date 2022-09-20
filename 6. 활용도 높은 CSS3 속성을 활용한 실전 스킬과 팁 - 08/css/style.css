@@ -1,0 +1,100 @@
+/* Goggle Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap');
+
+/* font awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+/* XEIcon */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+* {
+    /* box-sizing: border-box;  */
+    outline: none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Case #01. 버튼 만들고 임시로 버튼을 비활성화 할 경우 */
+/* .btn {
+    border: 1px solid #000;
+    padding: 20px;
+    pointer-events: none;
+} */
+
+.frame {
+    /* border: 5px solid red; */
+    border-radius: 10px 10px 0 0;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.frame::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+}
+
+.frame i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.3);
+    font-size: 2.5em;
+    color: white;
+    opacity: 0;
+}
+
+.frame a{
+    width: inherit;
+    height: inherit;
+}
+.frame a img{
+    display: block;
+    object-fit: cover;
+    width: inherit;
+    height: inherit;
+}
+.frame span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    width: 100%;
+    padding: 10px;
+}
+
+/* 중복으로 들어가는것을 한번에 :is 을 사용하여 공통화 */
+.frame :is(span, i), .frame:before {
+    transition: 0.35s;
+    pointer-events: none;
+}
+
+/* Hover */
+.frame:hover::before {
+    opacity: 1;
+}
+
+.frame:hover span {
+    background-color: #000;
+}
+
+.frame:hover i {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}

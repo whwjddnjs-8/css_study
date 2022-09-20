@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scaleable=yes">
+    <title>01. hover 가상클래스 (a태그 상태 가상클래스, 버튼 디자인의 모든 것)</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 01. hover 가상클래스 01(a 태그 상태 가상 클래스, 버튼 디자인의 모든 것) -->
+    <!-- a:link => 링크 방문하기 전 -->
+    <!-- a:visited -> 링크 방문한 후 -->
+    <!-- a:hover -> 링크에 마우스 올렸을 때 -->
+    <!-- a:active -> 링크 클릭하고 마우스를 떼지 않은 상태 -->
+
+    <!-- ::placeholder -> css3부터생김 반드시 :: 두개 나머지는 하나써도됨 -->
+
+    <div class="frame">
+        <a href="#none" target="_blank">링크 방문하기 전</a>
+        <a href="http://www.inflearn.com" target="_blank">링크 방문한 후</a>
+        <a href="#none" target="_blank">링크에 마우스 올렸을 때</a>
+        <a href="#none" target="_blank">링크 클릭하고 마우스를 떼지 않은 상태</a>
+    </div>
+
+    <hr>
+
+    <div class="buttons">
+        <a href="#none" class="btn">normal link</a>
+        <a href="#none" class="btn success">confirm link</a>
+        <a href="#none" class="btn warning">waring link</a>
+        <a href="#none" class="btn error">error link</a>
+        <a href="#none" class="btn critical-error">critical-error link</a>
+    </div>
+
+    <hr style="margin-bottom : 20px">
+
+    <a href="#none" class="download"><i class="xi-arrow-right"></i>download coupon</a>
+</html>

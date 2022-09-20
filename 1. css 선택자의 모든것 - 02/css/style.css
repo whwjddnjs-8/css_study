@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box; 
+    outline: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ccc;
+}
+
+h1 {
+    color: red !important;
+}
+
+.blue-text {
+    color: blue;
+}
+
+#green-text {
+    color: green;
+}

@@ -1,0 +1,64 @@
+/* Goggle Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* font awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+/* XEIcon */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box; 
+    outline: none;
+}
+
+body {
+    margin: 35px;
+}
+
+.cool-btn {
+    /* border: 1px solid #000; */
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.cool-btn:before,
+.cool-btn:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.35s;
+}
+
+.cool-btn:before {
+    content: attr(data-text);
+    background-color: crimson;
+    top: 0;
+    left: 0;
+}
+
+.cool-btn:after {
+    content: attr(data-event);
+    background-color: royalblue;
+    /* top: 100% : 부모요소의 가장 하단에 위치하게됨 */
+    top: 100%;
+    left: 0;
+}
+
+.cool-btn:hover:before {
+    top: -100%;
+}
+
+.cool-btn:hover:after {
+    top: 0;
+}

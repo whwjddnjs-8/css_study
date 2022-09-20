@@ -1,0 +1,10 @@
+column-count 속성 : 컬럼(세로) 개수 지정
+column-gap 속성 : 컬럼(세로) 사이의 간격
+column-width 속성 : 컬럼(세로) 너비 지정
+
+column-rule-width 속성 : 컬럼(세로) 구분선 두께
+column-rule-style 속성 : 컬럼(세로) 구분선 스타일
+column-rule-color 속성 : 컬럼(세로) 구분선 색상
+column-rule 단축 속성 : column-rule: width style color;
+
+column-span 속성 : 컬럼(세로) 병합해서 표현할지 지정

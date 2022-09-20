@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>로그인 폼(form)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 필수 폼 가상클래스, 로그인 폼 CSS 디자인 -->
+  <form>
+    <div class="login">
+      <div class="field">
+        <b>아이디</b><input type="text" placeholder="아이디 입력">
+      </div>
+      <div class="field">
+        <b>이메일</b><input type="email" placeholder="이메일 입력">
+      </div>
+      <div class="field">
+        <b>비밀번호</b><input type="password" placeholder="비밀번호 입력">
+      </div>
+      <div class="field">
+        <select>
+          <option value="">회원 가입경로를 선택해주세요.</option>
+          <option value="">마케팅 정보에 의해 가입한 고객</option>
+          <option value="">제휴회사의 고객 또는 대리점 고객</option>
+          <option value="">세미나/컨퍼런스 참여한 고객</option>
+          <option value="">기타</option>
+        </select>
+      </div>
+      <div class="field">
+        <b>하고 싶은 말</b><textarea placeholder="200자 이내로 적어주세요."></textarea>
+      </div>
+
+      <div class="field user-check">
+        <label>
+          <input type="checkbox" name="event"><em></em>이벤트 메일 수신에 동의합니다.
+        </label>
+      </div>
+      
+      <div class="field user-check">
+        개인정보 처리방침 약관 동의 
+        <label><input type="radio" name="agree"><em></em><span>동의함</span></label>
+        <label><input type="radio" name="agree"><em></em><span>동의안함</span></label>
+      </div>
+
+      <!-- <input type="button" value="회원가입 하기"> -->
+      <button>회원가입 하기</button>
+    </div>
+  </form>
+  
+  
+</body>
+</html>

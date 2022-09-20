@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04. 속성 선택자(attribute selector) 01(기본 형식과 주의할 점)</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;">
+</head>
+<body>
+    <!-- 폼 에서 사용하는 속성 선택자 (attribute selectors) -->
+    <div class="login">
+        <!-- input은  before after 가상클래스를  가질 수 없어서 background를 띄워야함-->
+        <input type="text" placeholder="Enter ID">
+        <input type="email" placeholder="Enter Email">
+        <input type="password" placeholder="Enter Password">
+        <!-- <input type="submit" value="Login"> -->
+        <!--  button은 before after 가상클래스 띄울 수 있음 -->
+        <button>Login</button>
+        <label>
+            <input type="checkbox"><span>Save login information</span>
+        </label>
+        <label>
+            <input type="radio"> <span>I agree to the terms and conditions.</span>
+        </label>
+    </div>
+</body>
+</html>

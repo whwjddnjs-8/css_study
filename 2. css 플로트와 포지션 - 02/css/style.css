@@ -1,0 +1,38 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box; 
+    outline: none;
+}
+
+body {
+    margin: 0;
+}
+
+header{
+    background-color: #ccc;
+    padding: 20px;
+}
+
+/* 마지막 선택자가 태그면 부모부터 써줌 header nav */
+
+header nav { 
+    background-color: pink;
+    width: 900px;
+    margin: auto; /* 중앙으로 보냄 */
+}
+
+header nav div {
+    /* width: 200px; */
+    height: 50px;
+    background-color: yellowgreen;
+}
+
+/* 마지막 선택자가 클래스나 아이디면 부모 날림 .logo */
+.logo {
+    /* 로고가 이미 왼쪽에 있다고 float : left 안하면 안됨 초기화는 float: none으로 되어있으니,, left작업을 해줘야함 */
+    float: left;
+}
+
+.menu {
+    float: right;
+}

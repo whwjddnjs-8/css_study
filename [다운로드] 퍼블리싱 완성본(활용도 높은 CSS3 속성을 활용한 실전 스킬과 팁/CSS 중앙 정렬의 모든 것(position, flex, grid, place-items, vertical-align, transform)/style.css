@@ -1,0 +1,68 @@
+/* XEION CDN */
+@import url('//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  height: 100vh;
+  margin: 50px;
+
+  /* Flex */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+
+  /* Grid */
+  /* display: grid;
+  justify-content: center;
+  align-items: center; */
+
+  /* place-item */
+  /* display: grid;
+  place-items: center; */
+}
+
+.element {
+  border: 5px solid #000;
+  background-color: skyblue;
+  color: #fff;
+  width: 500px;
+  height: 200px;
+
+  display: grid;
+  justify-content: center;  
+  align-items: center;
+
+  /* Position */
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+
+  /* margin */
+  /* margin: auto; */
+}
+
+.element {
+  /* text-align: center; */
+}
+.element span {
+  border: 5px solid red;
+  /* display: block;
+  text-align: center; */
+  /* display: inline-block; */
+  float: right;
+}
+
+div img {
+  /* vertical-align: middle; */
+  transform: translateY(6px);
+}
+div span {
+  font-size: 13px;
+}

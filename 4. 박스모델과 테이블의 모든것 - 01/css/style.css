@@ -1,0 +1,106 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box; 
+    outline: none;
+}
+
+body {
+    margin: 0;
+}
+/* span,
+div,
+button {
+    border: 1px solid red;
+} */
+
+:root {
+    --width: 800px;
+}
+
+.frame {
+    /* border: 5px solid #000; */
+    width: var(--width);
+    overflow: hidden;
+}
+.frame .item {
+    border: 5px solid red;
+    height: 300px;
+    float: left;
+    width: calc(var(--width) / 3);
+}
+
+.about {
+    border: 1px solid #000;
+}
+.about h1 {
+    text-align: center;
+}
+.inner{
+    border: 1px solid red;
+    width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.inner div{
+    border: 1px solid blue;
+    float: left;
+    width: 50%;
+    height: 300px;
+}
+
+.profile {
+    /* border: 1px solid #000; */
+    width: 300px;
+    margin: 50px auto;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    position: relative;
+}
+
+.profile:before {
+    content: '';
+    width: inherit; /* 부모것 상속받음 */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.photo {
+    /* border: 1px solid #000; */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+    background: url(../image/profile.png) no-repeat center center;
+    background-size: cover;
+}
+
+.profile a {
+    text-transform: uppercase;
+    background-color: yellowgreen;
+    color: white;
+    padding: 5px;
+    /* float: right; */
+    display: block;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .about {
+        background-color: #ddd;
+    }
+    .inner {
+        width: 100%;
+    }
+    .inner div {
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+}

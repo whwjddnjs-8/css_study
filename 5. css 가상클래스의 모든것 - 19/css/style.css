@@ -1,0 +1,91 @@
+/* Goggle Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap');
+
+/* font awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+/* XEIcon */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+* {
+    /* box-sizing: border-box;  */
+    outline: none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    margin: 100px;
+    background-color: #fff;
+    font-size: 15px;
+}
+
+.login {
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.login b {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.login .field {
+    margin: 10px 0;
+} 
+.login .field input[type=text],
+.login .field input[type=email],
+.login .field input[type=password] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    transition: 0.35s;
+    padding-left: 35px;
+}
+
+.login .field span {
+    /* border: 1px solid red; */
+    display: block;
+    position: relative;
+}
+
+.login .field span i {
+    position: absolute;
+    font-size: 22px;
+    color: #333;
+    top: 8px;
+    left: 5px;
+}
+
+/* Form Placeholder CSS */
+.login .field input[type=text]::placeholder,
+.login .field input[type=email]::placeholder,
+.login .field input[type=password]::placeholder {
+    color: #bbb;
+    transition: 0.2s;
+}
+
+/* Form Focus CSS */
+.login .field input[type=text]:focus,
+.login .field input[type=email]:focus,
+.login .field input[type=password]:focus {
+    border: 1px solid limegreen;
+}
+
+.login .field input[type=text]:focus + i,
+.login .field input[type=email]:focus + i,
+.login .field input[type=password]:focus + i {
+    color: limegreen;
+}
+
+/* Form Placeholder & Focus CSS */
+.login .field input[type=text]:focus::placeholder,
+.login .field input[type=email]:focus::placeholder,
+.login .field input[type=password]:focus::placeholder {
+    opacity: 0;
+    visibility: hidden;
+}

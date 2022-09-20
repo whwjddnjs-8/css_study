@@ -1,0 +1,91 @@
+/* Goggle Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap');
+
+/* font awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+/* XEIcon */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+* {
+    /* box-sizing: border-box;  */
+    outline: none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    margin: 35px;
+    background-color: #fff;
+    font-size: 15px;
+}
+
+.frame1 p:not(.active) {
+    font-size: 2em;
+    color: red;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ul li {
+    float: left;
+    padding: 0 20px;
+}
+
+ul li:not(:first-child) {
+    border-left: 1px solid crimson;
+}
+
+/* ul li:first-child {
+    border-left: none;
+} */
+
+section h1:not(.about h1, .portfolio h1) {
+    font-size: 40px;
+    text-align: center;
+    color: limegreen;
+}
+
+.login {
+    width: 350px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+.login b {
+    display: block;
+    margin-bottom: 5px;
+    width: 150px;
+}
+.login .field {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+} 
+
+/* Alert!! input box 부분에만 해당되는 css*/
+.login input:not(input[type=radio], input[type=checkbox]) {
+    border: 1px solid #ccc;
+    padding: 7px;
+    width: 100%;
+    outline: none;
+}
+
+.login input:focus {
+    border: 1px solid limegreen !important;
+    background-color: #eee;
+}
+.login .field input {
+    border: 1px solid #ddd;
+}
+
+.login input[type=button] {
+    width: 100%;
+    border: 1px solid #ddd;
+    height: 30px;
+    font-size: 12px;
+}

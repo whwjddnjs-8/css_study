@@ -1,0 +1,54 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box; 
+    outline: none;
+}
+
+.crew {
+    border-collapse: collapse;
+    width: 600px;
+    /* table-layout: fixed; */
+}
+.crew td,
+.crew th {
+    text-align: center;
+    padding: 5px;
+}
+
+.crew th {
+    background-color: #222;
+    border: none; /* th에는 보더가 없음 */
+    color: #fff;
+}
+
+.crew tr {
+    border-bottom: 1px solid #ddd
+}
+
+/* .crew tr:last-child {
+    border : none;
+} */
+
+.crew caption.headline{
+    /* caption-side: top; */
+    font-size: 26px;
+    margin-bottom: 10px;
+    text-align: left;
+    /* text-align: right; */
+}
+
+.crew caption.info{
+    caption-side: bottom;
+    font-size: 13px;
+    text-align: right;
+    color: #333;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.crew caption span:first-child{
+    float: left;
+}
+.crew caption span:last-child{
+    float: right;
+}

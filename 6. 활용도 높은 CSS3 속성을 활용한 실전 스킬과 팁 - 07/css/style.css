@@ -1,0 +1,107 @@
+/* Goggle Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap');
+
+/* font awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+/* XEIcon */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+* {
+    /* box-sizing: border-box;  */
+    /* outline: none; */
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #000;
+    line-height: 1.7em;
+    font-weight: 300;
+    color: #ccc;
+}
+
+.container {
+    width: 1400px;
+    padding: 1em;
+    margin: auto;
+
+}
+.container h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 4em;
+    font-weight: 500;
+    margin-bottom: 100px;
+}
+section {
+    background-color: #222;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+section h2{
+    color: #fff;
+    font-weight: 500;
+    font-size: 2em;
+    position: relative;
+    z-index: 1;
+}
+
+section h2:before{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    background-color: crimson;
+    left: -28px;
+    top: -10px;
+    z-index: -1;
+}
+
+section h2 span{
+    display: block;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+section .content {
+    column-count: 3;
+    column-rule: 1px solid #333;
+    column-gap: 2.5em;
+}
+
+section .content p {
+    margin-top: 0;
+}
+section .content q {
+    display: block;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+section .content img {
+    width: 100%;
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        width: 100%;
+    }
+
+    section .content {
+        column-count: 2;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+    }
+
+    section .content {
+        column-count: 1;
+    }
+}

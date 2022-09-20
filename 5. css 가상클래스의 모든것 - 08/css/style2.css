@@ -1,0 +1,51 @@
+/* Goggle Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* font awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+/* XEIcon */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box; 
+    outline: none;
+}
+
+body {
+    margin: 35px;
+}
+.btn{
+    text-decoration: none;
+    border: 1px solid #000;
+    padding: 7px 15px;
+    position: relative;
+    transition: 0.35s;
+    color: #fff;
+    background-color: #000;
+}
+
+.btn:hover {
+    color: #fff;
+}
+.btn:before {
+    content: '';
+    background: crimson;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.35s;
+    /* z-index: -1; */
+}
+
+.btn span {
+    /* before 보다 우선 순위를 가져가게 하여 글씨를 보이게함*/
+    position: relative;
+}
+
+.btn:hover:before {
+    height: 100%;
+}

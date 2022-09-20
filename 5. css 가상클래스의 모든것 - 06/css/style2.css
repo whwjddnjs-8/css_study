@@ -1,0 +1,17 @@
+/* Goggle Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box; 
+    outline: none;
+}
+
+.skills {
+    list-style: none;
+}
+
+.skills li:before {
+    content: '-';
+    margin-right: 5px;
+}

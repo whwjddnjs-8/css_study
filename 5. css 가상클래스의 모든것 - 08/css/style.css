@@ -1,0 +1,34 @@
+/* Goggle Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* font awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+/* XEIcon */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box; 
+    outline: none;
+}
+
+.headline{
+    border: 1px solid red;
+    position: relative;
+}
+.headline::before,
+.headline::after{
+    border: 1px solid #000;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.headline::before{
+    content: '♥';
+    color: crimson;
+}
+.headline::after{
+    content: '#01';
+    color: limegreen;
+}

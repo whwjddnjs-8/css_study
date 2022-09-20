@@ -1,0 +1,32 @@
+/* ============================= */
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+* {
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+.field input {
+  display: block;
+  margin: 10px 0;
+  width: 250px;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 3px;
+  padding-left: 35px;
+}
+.field input:focus {
+  /* border: 1px solid limegreen; */
+  filter: invert(60%) sepia(30%) saturate(4015%) hue-rotate(177deg) brightness(90%) contrast(90%);
+}
+.field input[type=text] {
+  background: url(images/icon-user.svg) no-repeat center left 5px;
+}
+.field input[type=email] {
+  background: url(images/icon-email.svg) no-repeat center left 5px;
+}
+.field input[type=password] {
+  background: url(images/icon-lock.svg) no-repeat center left 5px;
+}

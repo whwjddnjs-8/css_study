@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scaleable=yes">
+    <title>20. 폼 요소에 쓰이는 가상클래스(유효성 검사, 읽기 전용 가상클래스)</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 폼 요소에 쓰는 가상클래스(유효성 검사, 읽기 전용 가상클래스) -->
+    <!-- :valid :invalid 유효성 체크 가상클래스 -->
+    <!-- :required 필수 입력 속성(required)이 지정된 input, select, textarea 요소를 선택자로 사용 -->
+    <h2>:valid :invalid 유효성 체크 가상클래스</h2>
+    <form class="lecture1">
+        <div class="field">
+            <b>Enter ID</b><input type="text" maxlength="8" required>
+        </div>
+        <div class="field">
+            <b>Enter Email</b><input type="email" required>
+        </div>
+        <div class="field">
+            <b>Enter URL</b><input type="url" value="http://">
+        </div>
+        <p>※ 붉은색 테두리의 입력 내용은 필수항목입니다.</p>
+    </form>
+
+    <!-- :enabled :disabled 활성화 및 비활성화(선택, 클릭, 입력불가)된 요소를 선택자로 사용 -->
+    <h2>:enabled :disabled 활성화 및 비활성화</h2>
+    <form class="lecture2">
+        <div class="field">
+            <b>배송 주소</b><input type="text" placeholder="배송주소를 입력해주세요" required>
+        </div>
+        <div class="field">
+            <b>청구 주소</b><input type="text" value="(02315) 서울시 서대문구 연희동 123-45" disabled>
+        </div>
+    </form>
+
+
+    <!-- :read-write,:read-only 읽고 쓰기 & 읽기 전용 입력 요소(input, textarea)인 경우에 선택자로 사용 -->
+    <h2>:read-write,:read-only 읽고 쓰기 & 읽기 전용</h2>
+    <form class="lecture3">
+        <div class="field">
+            <h3>Check shipping details</h3>
+            <span class="test">
+                <b>Name : </b><input type="text" value="CodingWorks" readonly>
+            </span>
+            <span>
+                <b>Address : </b><input type="text" value="Yeonhui-ro, Seodaemun-gu, Seoul, Korea" readonly>
+            </span>
+            <span>
+                <b>Zip/postal code: </b><input type="text" value="02315" readonly>
+            </span>
+        </div>
+        <div class="field">
+            <h3>Final instructions</h3>
+            <textarea></textarea>
+        </div>
+    </form>
+</body>
+</html>
+

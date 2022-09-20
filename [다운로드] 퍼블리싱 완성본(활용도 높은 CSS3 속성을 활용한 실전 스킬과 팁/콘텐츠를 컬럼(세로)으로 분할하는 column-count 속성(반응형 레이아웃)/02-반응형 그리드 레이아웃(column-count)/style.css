@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+.frame {
+  border: 2px solid #000;
+  width: 800px;
+  margin: auto;
+  column-count: 3;
+  column-gap: 0;
+}
+.frame div {
+  border: 2px solid red;
+  height: 200px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .frame {
+    width: 100%;
+    column-count: 2;
+  }
+}
+@media (max-width: 767px) {
+  .frame {
+    width: 100%;
+    column-count: 1;
+  }
+}

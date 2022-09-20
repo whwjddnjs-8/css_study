@@ -1,0 +1,57 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box; 
+    outline: none;
+}
+
+.login {
+    border: 1px solid #000;
+    width: 400px;
+    padding: 15px;
+}
+
+.login input[type=text],
+.login input[type=email],
+.login input[type=password]{
+    width: 100%;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 3px;
+    padding-left: 32px;
+    background-repeat: no-repeat;
+    background-position: center left 5px;
+    background-size: 16px;
+}
+
+.login button {
+    width: 100%;
+    border: none;
+    padding: 5px;
+    border-radius:3px ;
+    margin: 5px 0;
+}
+
+.login input[type=text] {
+    background-image : url(../images/user.png);
+}
+
+.login input[type=email] {
+    background-image : url(../images/email.png);
+}
+
+.login input[type=password] {
+    background-image : url(../images/padlock.png);
+}
+
+.login label {
+    display : block;
+    text-align: center;
+}
+
+/* .login label input[type=checkbox],
+.login label input[type=radio] {
+
+} */
+
+

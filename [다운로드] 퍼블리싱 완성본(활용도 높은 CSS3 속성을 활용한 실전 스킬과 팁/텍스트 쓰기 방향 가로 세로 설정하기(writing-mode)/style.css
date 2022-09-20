@@ -1,0 +1,24 @@
+/* 텍스트 쓰기 방향 가로 세로 설정하기(writing-mode) */
+
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.heading {
+  background-color: limegreen;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  height: 500px;
+  text-align: center;
+  
+  /* Rotate */
+  /* transform: rotate(90deg);
+  transform-origin: left bottom; */
+
+  /* Writing-mode */
+  writing-mode: vertical-rl;
+}

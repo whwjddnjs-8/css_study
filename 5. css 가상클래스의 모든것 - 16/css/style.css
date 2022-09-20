@@ -1,0 +1,70 @@
+/* Goggle Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap');
+
+/* font awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+/* XEIcon */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+* {
+    /* box-sizing: border-box;  */
+    outline: none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    margin: 100px;
+    background-color: #fff;
+    font-size: 15px;
+}
+
+.login {
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.login b {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.login .field {
+    margin: 10px 0;
+} 
+.login .field input[type=text],
+.login .field input[type=email],
+.login .field input[type=password],
+.login .field textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.login .field textarea {
+    height: 100px;
+}
+
+.login button {
+    width: 100%;
+    border: none;
+    padding: 7px;
+    background-color: limegreen;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.login button:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.login .user-check {
+    text-align: center;
+    font-size: 14px;
+}

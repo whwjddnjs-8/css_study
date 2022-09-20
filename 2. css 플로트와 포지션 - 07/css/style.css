@@ -1,0 +1,30 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box; 
+    outline: none;
+}
+
+/* 포지션(position) 속성(z-index와 포지션 속성 우선순위) */
+div[class*=box] {
+    width: 200px;
+    height: 200px;
+    font-size: 2em;
+    position: absolute; /* 한자리에 겹치게 됨 z-index  : 0*/ 
+}
+
+.box1 {
+    background-color: crimson;
+    top: 0;
+    left: 0;
+}
+.box2 {
+    background-color: royalblue;
+    top: 50px;
+    left: 50px;
+
+}
+.box3 {
+    background-color: yellowgreen;
+    top: 100px;
+    left: 100px;
+}

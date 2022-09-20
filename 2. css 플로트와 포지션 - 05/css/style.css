@@ -1,0 +1,38 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box; 
+    outline: none;
+}
+
+body {
+    margin: 0; 
+    height: 200vh;
+    /* viewport 보고있는 것의 높이 (100%) 의 2배를 강제로 늘리겠다 */
+}
+
+header {
+    /* position 을 추가했더니 가로길이가 줄어듬 (inline-block)*/
+    /* width: 100%;
+    position: fixed; */
+    height: 200vh;
+    
+}
+
+header .banner {
+    height: 100px;
+    background-color: yellowgreen;
+}
+
+header nav {
+    height: 100px;
+    background-color: crimson;
+    position: sticky;
+    top: 0;
+    /* Top이 0일때 요소를 fixed 시켜라 */
+}
+
+.gototop {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}

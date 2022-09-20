@@ -1,0 +1,30 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box; 
+    outline: none;
+}
+
+.parent div {
+    border: 1px solid #000;
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    line-height: 300px;
+    font-size: 2em;
+    cursor: pointer; 
+}
+
+.parent div:nth-child(1) {
+    background-color: skyblue;
+}
+.parent div:nth-child(2) {
+    background-color: gold;
+    /*display: none;  .parent div에 display inline-block 처리해놔서 display: none 안먹음 */
+    /*opacity: 0;  현재 존재하지만 투명도를 0으로 둬, 눈에 보이지않음 */
+    /*visibility: hidden;  자리는 유지한채 사라짐 */
+}
+.parent div:nth-child(3) {
+    background-color: grey;
+}

@@ -1,0 +1,38 @@
+/* Goggle Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* font awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+/* XEIcon */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box; 
+    outline: none;
+}
+
+body {
+    margin: 35px;
+}
+
+.index-links{
+    counter-reset: index;
+    line-height: 1.8em;
+}
+.index-links a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+.index-links a:before {
+    counter-increment: index;
+    content: '섹션.' counter(index) ' [필수이론] - ';
+    /* color: crimson; */
+    font-weight: bold;
+}
+.index-links a:hover {
+    color: limegreen;
+}
+

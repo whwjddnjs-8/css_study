@@ -1,0 +1,51 @@
+/* Goggle Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap');
+
+/* font awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+/* XEIcon */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+* {
+    box-sizing: border-box; 
+    outline: none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 공지사항 말줄임 */
+.news {
+    border: 1px solid #000;
+    width: 400px;
+    padding: 5px;
+}
+
+.news a{
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+    color: #000;
+    overflow: hidden;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.news a:last-child{
+    border: none;
+}
+
+.news a span{
+    float: left;
+    /* border: 1px solid red; */
+    width: 75%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.news a em{
+    /* border: 1px solid blue; */
+    font-style: normal;
+    float: right;
+    width: 25%;
+    text-align: right;
+}

@@ -1,0 +1,87 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box; 
+    outline: none;
+}
+/* 
+1) 
+div{
+    border: 1px solid #000;
+    width: 500px;
+    margin: auto;
+}
+
+span {
+    border: 1px solid #000;
+    width: 500px;
+    margin: auto;
+}
+
+button {
+    border: 1px solid #000;
+    margin: auto;
+} */
+
+/* 
+2 )
+div {
+    border: 1px solid #000;
+    text-align: center;
+} */
+
+/* 3) */
+.parent {
+    border: 1px solid #000;
+    width: 600px;
+    /* overflow: hidden; */
+    display: flex;
+    /* flex : 그거안에서 알아서 3등분할게 */
+}
+
+.parent div {
+    /* width: 200px; */
+    flex: 1;
+    /* flex : 1 정확히 3등분하도록 함 */
+    height: 200px;
+    border: 1px solid red;
+    /* display: inline-block;
+    margin-right: -5px; */
+    /* float: left; */
+
+}
+
+/* 4)  */
+span {
+    border: 1px solid #000;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    /* position: absolute 를 주는 순간 크기값을 가질 수 있게됨 (inline-block)으로바뀜*/
+}
+
+div {
+    border: 1px solid #000;
+    
+}
+
+/* 5)  */
+.span5 {
+    border: 1px solid #000;
+    display: block;
+}
+
+.frame {
+    width: 400px;
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+.frame input, .frame button{
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+table {
+    width: 100%;
+}

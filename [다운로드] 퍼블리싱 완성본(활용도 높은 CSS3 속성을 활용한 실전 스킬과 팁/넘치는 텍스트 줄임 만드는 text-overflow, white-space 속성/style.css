@@ -1,0 +1,45 @@
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+/* 공지사항 말줄임 만들기 */
+.news {
+  border: 1px solid #000;
+  width: 400px;
+  padding: 5px;
+}
+.news a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  overflow: hidden;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+.news a:last-child {
+  border: none;
+}
+.news a span {
+  float: left;
+  /* border: 1px solid red; */
+  width: 75%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.news a em {
+  font-style: normal;
+  float: right;
+  /* border: 1px solid blue; */
+  width: 25%;
+  text-align: right;
+}

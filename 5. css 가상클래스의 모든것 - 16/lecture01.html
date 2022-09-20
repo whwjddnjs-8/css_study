@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scaleable=yes">
+    <title>16. 폼 요소에 쓰는 가상클래스(필수 폼 가상클래스, 로그인 폼 CSS 디자인) 01</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 필수 폼 가상클래스, 로그인 폼 CSS 디자인 -->
+    <form class="login">
+        <div class="field">
+            <b>아이디</b><input type="text" placeholder="아이디 입력">
+        </div>
+        <div class="field">
+            <b>이메일</b><input type="email" placeholder="이메일 입력">
+        </div>
+        <div class="field">
+            <b>비밀번호</b><input type="password" placeholder="비밀번호 입력">
+        </div>
+        <div class="field">
+            <b>하고 싶은 말</b><textarea></textarea>
+        </div>
+        <div class="field user-check">
+            <input type="checkbox" checked> 이벤트 메일 수신에 동의합니다.
+        </div>
+        <div class="field user-check">
+            개인정보 처리방침 약관 동의 
+            <input type="radio" name="agree" checked> 동의함
+            <input type="radio" name="agree"> 동의안함
+        </div>
+        <!-- <input type="submit" value="회원가입 하기"> -->
+        <button>회원가입 하기</button>
+    </form>
+</body>
+</html>
+

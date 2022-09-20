@@ -1,0 +1,39 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box; 
+    outline: none;
+}
+
+span {
+    border: 1px solid #000;
+    width: 300px;
+    height: 100px;
+    margin: 30px;
+    padding: 30px;
+    display: none;
+}
+
+div {
+    border: 1px solid #000;
+    width: 200px;
+    height: 100px;
+    /* margin: 30px; */
+    /* margin 겹침 현상 30px, 30px 겹치면 60이어야하는데 30px의 공간이 있음 */
+    /* display: none; */
+}
+
+div:nth-child(1) {
+    margin-bottom: 30px;
+}
+div:nth-child(2) {
+    margin-top: 30px;
+}
+
+/* 마진겹치는 경우 더 큰것을 우선의 px 이 적용됨 (상하 마진만 해당) */
+
+button {
+    width: 100px;
+    height: 100px; 
+    margin: 30px;
+    display: none;
+}

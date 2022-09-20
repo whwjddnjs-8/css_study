@@ -1,0 +1,25 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6em;
+}
+
+div {
+  column-count: 3;
+  column-gap: 100px;
+  /* column-width: 200px; */
+  /* column-rule-width: 3px;
+  column-rule-style: solid;
+  column-rule-color: crimson; */
+  column-rule: 3px solid crimson;
+}
+div h1 {
+  column-span: all;
+  /* border: 1px solid #000; */
+}

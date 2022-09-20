@@ -1,0 +1,68 @@
+/* Goggle Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Nanum+Pen+Script&display=swap');
+
+/* XEICON CDN */
+@import url('//cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.1/xeicon.min.css');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box; 
+    outline: none;
+}
+
+body {
+    font-size: 15px;
+    margin: 50px;
+    line-height: 1.6em;
+}
+
+.employee {
+    width: 700px;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+.employee td,
+.employee th {
+    /* border: 1px solid #ccc; */
+    padding: 5px;
+    text-align: center;
+
+}
+
+.employee tr{
+    border-bottom: 1px solid #ccc;
+    transition: 0.35s;
+}
+
+/* stripe design */
+/* .employee tr:nth-child(odd) {
+    background-color: #eee;
+} */
+
+.employee tr:first-child {
+    border: none;
+}
+.employee tr:last-child {
+    border: none;
+}
+
+.employee tr:hover {
+    background-color: #eee;
+}
+
+.employee th{
+    background-color: limegreen;
+    color: white;
+}
+
+.employee caption {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.employee tr td:first-child {
+    font-weight: bold;
+}
+.employee tr td:last-child {
+    color: royalblue;
+}

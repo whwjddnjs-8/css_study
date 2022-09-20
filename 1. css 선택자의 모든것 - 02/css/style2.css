@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box; 
+    outline: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+section.about {
+    background-color: crimson;
+    color: #fff;
+    padding: 25px;
+}
+
+@media (max-width : 768px) {
+    /* 단독으로 about만 쓰면 인식을 못함 */
+    /* pc 버전에서 section.about 으로 선언했으면 미디어 쿼리에서도 똑같이 section.about으로 선언해줘야함. */
+    section.about {
+        background-color: yellowgreen;
+        color: #000;
+    }
+}

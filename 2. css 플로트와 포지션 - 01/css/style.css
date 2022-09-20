@@ -1,0 +1,33 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box; 
+    outline: none;
+}
+
+body {
+    margin: 0;
+}
+
+/* div는 블록요소이기 때문에 세로로 늘어짐 */
+.parent{
+    border: 5px solid #000;
+    width: 800px;
+    box-sizing: content-box;
+}
+.parent div{
+    border: 5px solid red;
+    width: 100px;
+    height: 100px;
+    /* float: left; 둥둥 떠서 왼쪽에 붙어! */
+    /* float:right;  오른쪽부터 붙기 때문에 3,2,1 순서!*/
+}
+.child1 {
+    float: left;
+}
+.child2 {
+    margin: auto;
+}
+.child3 {
+    float: right;
+    margin-top: -100px;
+}

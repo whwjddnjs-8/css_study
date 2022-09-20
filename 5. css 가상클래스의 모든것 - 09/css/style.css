@@ -1,0 +1,42 @@
+/* Goggle Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* font awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+/* XEIcon */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box; 
+    outline: none;
+}
+
+body {
+    background-color: black;
+    margin: 35px;
+}
+
+.faq-title {
+    background-color: #303030;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.faq-title:after{
+    content: '\e9c5';
+    font-family: xeicon;
+    position: absolute;
+    right: 10px;
+    /* 완벽하게 정중앙 유지하도록 하는 방법 */
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.35s;
+}
+
+.faq-title.active:after {
+    transform: translateY(-50%) rotate(45deg);
+}

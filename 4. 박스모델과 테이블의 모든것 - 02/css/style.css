@@ -1,0 +1,12 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box; 
+    outline: none;
+}
+
+.box-sizing-frame {
+    width: 400px;
+    height: 400px;
+    border: 100px solid red;
+    padding: 100px;
+}

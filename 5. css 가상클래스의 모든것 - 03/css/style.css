@@ -1,0 +1,27 @@
+/* Goggle Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Nanum+Pen+Script&display=swap');
+
+/* XEICON CDN */
+@import url('//cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.1/xeicon.min.css');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box; 
+    outline: none;
+}
+
+body {
+    font-size: 15px;
+    margin: 50px;
+    line-height: 1.6em;
+}
+
+div :nth-child(1) {
+    color: red;
+}
+div :nth-child(2) {
+    color: blue;
+}
+div :nth-child(3) {
+    color: limegreen;
+}

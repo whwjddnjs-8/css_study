@@ -1,0 +1,18 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 클래스 중첩해서 사용하기(CSS : Cascading Style Sheets) */
+
+p {
+    border: 1px solid #000;
+}
+.text-center {
+    text-align: center;
+}
+.text-large {
+    font-size: 2em;
+}
+.text-blue {
+    color: blue;
+}

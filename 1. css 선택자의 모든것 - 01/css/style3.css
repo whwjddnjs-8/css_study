@@ -1,0 +1,28 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 
+1. 스페이스( ) : 자손선택자(하위선택자)
+2. > : 자식선택자 
+3. 콤마(,) : 연결선택자(그룹선택자)
+*/
+
+/* .start > span {
+    color : red;
+} */
+
+.start div p,
+.end {
+    color: red;
+    font-size: 2em;
+}
+.end {
+    text-transform: uppercase;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
+    font-weight: normal;
+}
+

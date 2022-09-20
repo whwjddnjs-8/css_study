@@ -1,0 +1,51 @@
+/* Goggle Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box; 
+    outline: none;
+}
+
+body {
+    margin: 35px;
+}
+
+.coffee {
+    list-style: none;
+    padding: 0;
+    line-height: 1.6em;
+}
+
+.coffee li:before {
+    content: '\2615';
+    margin-right: 5px;
+    font-size: 13px;
+    display: inline-block;
+    transform: translateY(-1px);
+}
+
+.coffee li.hit:after,
+.coffee li.soldout:after{
+    margin-left: 5px;
+    text-transform: uppercase;
+    font-size: 10px;
+    transform: translateY(-1px);
+    display: inline-block;
+}
+
+.coffee li.hit:after {
+    content: 'hit';
+    color: crimson;
+    
+}
+
+.coffee li.soldout:after {
+    content: 'soldout';
+    color: royalblue;
+}
+
+.coffee li.soldout {
+    color: #ccc;
+    text-decoration: line-through;
+}

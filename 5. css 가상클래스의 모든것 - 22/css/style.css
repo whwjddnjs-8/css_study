@@ -1,0 +1,86 @@
+/* Goggle Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap');
+
+/* font awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+/* XEIcon */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+* {
+    /* box-sizing: border-box;  */
+    outline: none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    margin: 35px;
+    background-color: #fff;
+    font-size: 15px;
+}
+
+/* header h1,
+section h1,
+footer h1 {
+    font-size: 2em;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+header h1:before,
+section h1:before,
+footer h1:before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background-color: limegreen;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+
+:is(header, section,footer) h1 {
+    font-size: 2em;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+:is(header, section,footer) h1:before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background-color: limegreen;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.login {
+    border: 1px solid #000;
+    width: 350px;
+    padding: 15px;
+}
+
+.login .field {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.login .field span {
+    width: 150px;
+}
+
+/* .login .field input:not(input[type=checkbox]) {
+    width: 100%;
+} */
+
+.login .field :is(input[type=text], input[type=email], input[type=password]) {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #ccc;
+}

@@ -1,0 +1,13 @@
+.frame {
+  border: 5px solid crimson;
+  width: 600px;
+  height: 100%;
+  aspect-ratio: 16 / 9;
+}
+.frame img {
+  display: block;
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  object-position: bottom;
+}

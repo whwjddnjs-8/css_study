@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>폼 요소 input에 폰트 아이콘 사용하기</title>
+  <style>
+    /* XEION CDN */
+    @import url('//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+    /* Google Web Fonts CDN */
+    @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+    * {
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    .login {
+      border: 1px solid #000;
+      width: 350px;
+      padding: 20px;
+    }
+    .login .field {
+      margin: 10px 0;
+    }
+    .login .field b {
+      display: block;
+      font-weight: 500;
+    }
+    .login .field input[type=text],
+    .login .field input[type=email],
+    .login .field input[type=password] {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+      outline: none;
+      padding-left: 35px;
+    }
+    .login .field span {
+      /* border: 1px solid red; */
+      display: block;
+      position: relative;
+    }
+    .login .field span:before {
+      font-family: xeicon;
+      font-size: 22px;
+      color: #333;
+      position: absolute;
+      left: 6px;
+      top: 8px;
+    }
+    .login .field span.icon-id:before {
+      content: "\e9f3";
+    }
+    .login .field span.icon-email:before {
+      content: "\ea07";
+    }
+    .login .field span.icon-pw:before {
+      content: "\e966";
+    }
+
+    .login .field span i {
+      font-size: 22px;
+      color: #333;
+      position: absolute;
+      left: 6px;
+      top: 8px;
+    }
+    .login .field input[type=text]:focus,
+    .login .field input[type=email]:focus,
+    .login .field input[type=password]:focus {
+      border: 1px solid limegreen;
+    }
+    .login .field input[type=text]:focus + i,
+    .login .field input[type=email]:focus + i,
+    .login .field input[type=password]:focus + i {
+      color: limegreen;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login">
+    <div class="field">
+      <b>아이디</b>
+      <span class="icon-id">
+        <input type="text" placeholder="아이디 입력">
+        <!-- <i class="xi-user"></i> -->
+      </span>
+    </div>
+    <div class="field">
+      <b>이메일</b>
+      <span class="icon-email">
+        <input type="email" placeholder="이메일 입력">
+        <!-- <i class="xi-mail-o"></i> -->
+      </span>
+    </div>
+    <div class="field">
+      <b>비밀번호</b>
+      <span class="icon-pw">
+        <input type="password" placeholder="비밀번호 입력">
+        <!-- <i class="xi-lock-o"></i> -->
+      </span>
+    </div>
+  </div>
+  
+</body>
+</html>

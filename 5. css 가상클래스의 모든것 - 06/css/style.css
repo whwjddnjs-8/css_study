@@ -1,0 +1,25 @@
+/* Goggle Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Nanum+Pen+Script&family=Playfair+Display&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box; 
+    outline: none;
+}
+
+.headline:before{
+    content: '♥';
+    color: crimson;
+    margin-right: 5px;
+}
+
+.headline:after {
+    content: '#01';
+    background-color: limegreen;
+    color: white;
+    font-size: 18px;
+    margin-left: 5px;
+    padding: 0 5px;
+    border-radius: 3px;
+    vertical-align: middle;
+}

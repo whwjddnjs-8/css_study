@@ -1,0 +1,83 @@
+/* Goggle Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap');
+
+/* font awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+/* XEIcon */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box; 
+    outline: none;
+}
+
+body {
+    margin: 35px;
+    color: #222;
+    font-weight: 300;
+}
+
+.heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    margin: 0;
+    text-align: center;
+    font-size: 38px;
+    /* border: 1px solid #000; */
+}
+
+.heading:before,
+.heading:after {
+    position: absolute;
+    color: #ddd;
+    font-size: 110px;
+    top: -40px;
+}
+
+.heading:before {
+    content: '{';
+    left: 0;
+}
+
+.heading:after {
+    content: '}';
+    right: 0;
+}
+
+.heading span {
+    display: block;
+    font-weight: normal;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.heading span:before {
+    content: '\f004';
+    font-family: fontawesome;
+    margin-right: 5px;
+    color: crimson;
+    /* before, after은 inline 요소이기 때문에 크기값을 가질수 없어서 inline-block으로 변경하여 크기값을 주면 animation 효과가 나타남 */
+    display: inline-block;
+    animation: heart 0.7s linear infinite;
+}
+.heading em {
+    font-style: normal;
+    color: crimson;
+}
+
+@keyframes heart {
+    0%{
+        transform: scale(0.7);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(0.7);
+    }
+}

@@ -1,0 +1,22 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box; 
+    outline: none;
+}
+
+/* .parent {
+    width: 600px;
+} */
+.parent div {
+    border: 1px solid red;
+    height: 200px;
+    /* float: left; */
+    width: 200px;
+    display: inline-block;
+}
+
+/* inline-block : 자기가 div안에 들어있는 값만큼 width 를 정함 */
+
+.frame img{
+    width: 200px;
+}

@@ -1,0 +1,12 @@
+04. 속성 선택자(attribute selectors)
+- 속성 선택자 기본형식
+속성 : property, attribute
+
+attribute -> :before, :after 가상클래스에서 많이 사용 ...attr() 많이 사용
+            제이쿼리 ...attr()
+
+css attribute 로 구글링 하기~
+
+선택자[속성명="값"] {...} 
+선택자[속성명='값'] {...} 
+선택자[속성명=값] {...}

@@ -1,0 +1,25 @@
+display 속성(inline, inline-block, block 특징)
+
+- 퍼블리싱의 모든것! HTML 인라인요소, 블록요소, 인라인블록
+- 특징을 반드시 알고있어야함
+- 인라인요소, 블록요소, 인라인 블록에 대한 특징을 정확히 알고 있다면 앞으로 퍼블리싱이 수월해지실 것이고 아니라면 항상 애매한 상태에서 퍼블리싱 하시게 될거예요. 너무너무 중요합니다~!!
+
+- 인라인요소(Inline Elements)
+: span, a, small, big, em, u, ins, i, s, del, br, q, b, strong, mark, sub, sup, label, map, cite, abbr, time
+: 글자와 관련된, 서식 관련된 요소
+: 글자를 개별적으로 꾸미는 서식에 관련된 태그들
+: 가로배치
+: 기본 너비 값 : 컨텐츠의 너비 값 / 한줄에 여러 개 배치 / 크기 값을 가질 수 없음 / 상하 마진은 가질 수 없음
+
+- 블록 요소 (Block Elements)
+: div, p, table, blockquote, ul, ol, li, dl, td, dd, table, tr, td, th, form, hr, h1~h6, header, nav, footer, main, section, article, aside, figure, figcaption, summary, details, address
+: 레이아웃에 관련된 태스들, 목록 태그, 제목태그, 테이블관련, 시맨틱 태그들
+: 층층이 세로 배치 쌓아간다는 개념, 한줄에 하나만 있을 수 있음
+: 기본 너비값 : 100% / 한줄에 하나만 배치 / 너비 값, 높이 값 가질 수 있음 / 상하좌우 마진 가질 수 있음
+
+- 인라인 블록 요소(Inline Block Elements)
+: img, input, button, textarea, select, 대부분의 Font Icon 태그, video, audio, iframe
+: 이미지를 비롯한 대부분의 폼 요소(label 은 인라인 요소)
+: 기본 너비 값 : 컨텐츠의 너비 값 / 한줄에 여러개 배치 / 너비값, 높이값 가질 수 있음 / 상하 좌우 마진 가질 수 있음 
+
+

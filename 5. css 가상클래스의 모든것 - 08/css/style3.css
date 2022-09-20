@@ -1,0 +1,47 @@
+/* Goggle Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* font awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+/* XEIcon */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box; 
+    outline: none;
+}
+
+body {
+    margin: 35px;
+}
+
+.section-header{
+    text-align: center;
+}
+
+.section-header h3{
+    color: #f37268;
+    font-weight: 500;
+    font-style: 25px;
+}
+
+.section-header h1{
+    font-weight: normal;
+}
+
+.section-header h1 span{
+    /* border: 1px solid #000; */
+    position: relative;
+}
+.section-header h1 span:before{
+    content: '';
+    background: url(../images/kakao-talk.png) no-repeat;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top:-24px;
+    right: -30px;
+}
+

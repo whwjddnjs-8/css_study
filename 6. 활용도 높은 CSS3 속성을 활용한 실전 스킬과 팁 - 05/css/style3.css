@@ -1,0 +1,40 @@
+/* Goggle Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap');
+
+/* font awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+/* XEIcon */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+* {
+    box-sizing: border-box; 
+    outline: none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.field input {
+    display: block;
+    margin: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 3px;
+    padding-left: 35px;
+}
+
+.field input:focus {
+    /* border: 1px solid limegreen; */
+    filter: invert(52%) sepia(67%) saturate(570%) hue-rotate(163deg) brightness(91%) contrast(87%);
+}
+
+.field input[type=text] {
+    background: url(../images/icon-user.svg) no-repeat center left 5px;
+}
+
+.field input[type=email] {
+    background: url(../images/icon-email.svg) no-repeat center left 5px;
+}
+
+.field input[type=password] {
+    background: url(../images/icon-lock.svg) no-repeat center left 5px;
+}
